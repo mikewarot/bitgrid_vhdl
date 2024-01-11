@@ -37,11 +37,23 @@ begin
   
   process is -- overall execution
   begin
-    wait for 93 ns;
-	inputs <= "0101";
-	wait for 900 ns;
-	inputs <= "1010";
-	wait for 7 ns;
+    wait for 93	ns;  inputs <= "0000";
+    wait for 93 ns;  inputs <= "0001";
+    wait for 93 ns;  inputs <= "0010";
+    wait for 93 ns;  inputs <= "0011";
+    wait for 93 ns;  inputs <= "0100";
+    wait for 93 ns;  inputs <= "0101";
+    wait for 93 ns;  inputs <= "0110";
+    wait for 93 ns;  inputs <= "0111";
+    wait for 93 ns;  inputs <= "1000";
+    wait for 93 ns;  inputs <= "1001";
+    wait for 93 ns;  inputs <= "1010";
+    wait for 93 ns;  inputs <= "1011";
+    wait for 93 ns;  inputs <= "1100";
+    wait for 93 ns;  inputs <= "1101";
+    wait for 93 ns;  inputs <= "1110";
+    wait for 93 ns;  inputs <= "1111";
+	wait for 300 ns;
   end process;
 
 end architecture;
